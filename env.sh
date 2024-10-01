@@ -1,0 +1,6 @@
+REGION="ap-northeast-1"
+ECR_URI="awsAccountId.dkr.ecr.$REGION.amazonaws.com"
+ECR_REPOSITORY="security-web-waf-dev-flask"
+ECR_REPOSITORY_URI="$ECR_URI/$ECR_REPOSITORY"
+TAG="latest"
+export IMAGE_ID="$ECR_REPOSITORY_URI:$TAG"
